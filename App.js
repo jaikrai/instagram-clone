@@ -5,7 +5,9 @@ import { NavigationContainer } from '@react-native'
 
 export default function App() {
   return (
-    <NavigationContainer></NavigationContainer>
+    <NavigationContainer>Instagram
+    
+    </NavigationContainer>
   );
 }
 
