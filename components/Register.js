@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Button, TextInput, View } from 'react-native'
+import firebase from 'firebase'
+import { result } from 'lodash'
 
 export class Register extends Component {
     constructor(props){
@@ -13,6 +15,14 @@ export class Register extends Component {
     }
     // 
     onSignUp(){
+        const{ email, password, name } = this.state;
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then((result) => {
+            console.log(result);
+        })
+        .catch((error) =>{
+            console.log(error);
+        })
 
     }
     render() {

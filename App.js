@@ -1,7 +1,7 @@
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import * as firebase from 'firebase'
+import  firebase from 'firebase'
 
 import React from 'react';
 import LandingScreen from './components/Landing';
@@ -18,7 +18,7 @@ const firebaseConfig = {
   measurementId: "G-HQJR1NQC5P"
 };
 if(firebase.apps.length === 0){
-  firebase.initi
+  firebase.initializeApp(firebaseConfig);
 }
 
 const Stack = createStackNavigator();
