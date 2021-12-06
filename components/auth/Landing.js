@@ -1,5 +1,5 @@
-import { Button, View } from "react-native";
-import React from 'react'
+import React from 'react';
+import { Button, View } from 'react-native';
 
 
 //props --> just like a argunment
@@ -8,11 +8,12 @@ export default function Landing({ navigation }){
         <View style={ {flex: 1, justifyCOntent: 'center'}}>
             <Button 
                 title="Register"
-                onPress={() => navigation.naviagte("Register")}/>
+                onPress={() => navigation.navigate("Register")}/>
                 <Button 
                 title="Login"
-                onPress={() => navigation.naviagte("Login")}/>
+                onPress={() => navigation.navigate("Login")}/>
         </View>
     )
 }
+
 
